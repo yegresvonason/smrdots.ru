@@ -1,0 +1,9 @@
+/* line 1, style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 9, style.scss */
+header {
+  background: url("background1_transparent_export_fast_png_40.png") center no-repeat; }
