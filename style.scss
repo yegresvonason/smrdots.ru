@@ -3,9 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{list-style: none;}
 body{
     //background: url("../img/background1_transparent_export_fast_png_40.png") center no-repeat;
+    //max-width: 1600px;
+}
+wrapper{
+    
 }
 header{
     background: url("background1_transparent_export_fast_png_40.png") center no-repeat;
+    max-width: 1600px;
+    height: 850px;
+    margin: 0 auto;
+    
+    .header-menu{
+        float: right;
+        margin: 10px 300px;
+        
+        li{
+            display: inline-block;
+            margin-right: 30px;
+        }
+    }
 }
