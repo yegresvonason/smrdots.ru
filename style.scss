@@ -9,21 +9,33 @@ a{
 }
 ul{list-style: none;}
 body{
-    //background: url("../img/background1_transparent_export_fast_png_40.png") center no-repeat;
-    //max-width: 1600px;
+    
 }
 wrapper{
     
 }
 header{
-    background: url("background1_transparent_export_fast_png_40.png") center no-repeat;
+    
+    background-image: url("background1_transparent_export_fast_png_40.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    //background-color: #fff; // Цвет фона при загрузке - ???
     max-width: 1600px;
     height: 850px;
     margin: 0 auto;
     
+    .header-logo{
+        float: left;
+        margin: 20px 0 0 200px;
+        //border: 1px solid #333;
+    }
+    
     .header-menu{
         float: right;
-        margin: 10px 300px;
+        margin: 20px 300px;
+        //border: 1px solid #333;
         
         li{
             display: inline-block;

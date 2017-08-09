@@ -13,17 +13,25 @@ a {
 ul {
   list-style: none; }
 
-/* line 18, style.scss */
+/* line 17, style.scss */
 header {
-  background: url("background1_transparent_export_fast_png_40.png") center no-repeat;
+  background-image: url("background1_transparent_export_fast_png_40.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   max-width: 1600px;
   height: 850px;
   margin: 0 auto; }
-  /* line 24, style.scss */
+  /* line 29, style.scss */
+  header .header-logo {
+    float: left;
+    margin: 20px 0 0 200px; }
+  /* line 35, style.scss */
   header .header-menu {
     float: right;
-    margin: 10px 300px; }
-    /* line 28, style.scss */
+    margin: 20px 300px; }
+    /* line 40, style.scss */
     header .header-menu li {
       display: inline-block;
       margin-right: 30px; }
