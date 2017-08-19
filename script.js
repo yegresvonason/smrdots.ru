@@ -1,19 +1,22 @@
 $(document).ready(function(){
-    var ishidden=true;
+    //var ishidden=true;
     $('.nav-icon').click(function(){
         $(this).toggleClass('open');
-        if(ishidden==true){
-            $('.header-menu').css({
-                display: 'flex',
-            });
-            ishidden=false;
-        }
-        else{
-            $('.header-menu').css({
-                display: 'none'
-            });
-            ishidden=true;
-        }
+//        if(ishidden==true){
+//            $('.header-menu').css({
+//                display: 'flex',
+//                opacity: '1'
+//            });
+//            ishidden=false;
+//        }
+//        else{
+//            $('.header-menu').css({
+//                opacity: '0'
+//            });
+//            ishidden=true;
+//        }
+        
+        $('.header-menu').toggleClass('open');
         
         
         // открываем-скрываем меню:

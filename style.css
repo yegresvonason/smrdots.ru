@@ -1,4 +1,7 @@
 * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -49,7 +52,7 @@ header {
       width: 45px;
       height: 45px;
       position: relative;
-      margin: 20px 40px 0 0;
+      margin: 70px 20px 0 0;
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
       -webkit-transition: .5s ease-in-out;
@@ -69,7 +72,8 @@ header {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         -webkit-transition: .25s ease-in-out;
-        transition: .25s ease-in-out; }
+        transition: .25s ease-in-out;
+        border: 2px solid #333; }
       header .header-top .nav-icon span:nth-child(1) {
         top: 0px;
         background: #ff0000; }
@@ -95,28 +99,37 @@ header {
     width: 0%;
     left: 50%; }
   header .header-menu {
+    position: absolute;
+    top: 110px;
+    right: 0px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin: 10px 0 0 0;
     font-size: 24px;
-    display: none;
-    z-index: 3; }
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
     header .header-menu ul {
       background: rgba(106, 105, 105, 0.98);
       padding: 0px 0px 4px 4px;
       border-bottom-left-radius: 8px; }
       header .header-menu ul li {
-        padding: 14px 144px 6px 6px;
+        padding: 14px 160px 6px 6px;
         background: rgba(255, 255, 255, 0.31);
         border-bottom: 2px solid rgba(144, 144, 144, 0.2); }
       header .header-menu ul li:last-child {
         border-bottom: none;
         border-bottom-left-radius: 8px; }
+  header .header-menu.open {
+    opacity: 1; }
   header .header-name {
     position: absolute;
-    margin-top: 160px;
+    margin-top: 180px;
     text-align: center;
     z-index: 2; }
+
+/* @media for  */
 
 /*# sourceMappingURL=style.css.map */

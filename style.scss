@@ -1,4 +1,11 @@
 *{
+    vertical-align: baseline;
+    //font-weight: inherit;
+    //font-family: inherit;
+    //font-style: inherit;
+    //font-size: 100%;
+    border: 0 none;
+    outline: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,6 +32,9 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     max-width: 1600px;
     height: 850px;
@@ -49,7 +59,7 @@ header{
             width: 45px;
             height: 45px;
             position: relative;
-            margin: 20px 40px 0 0;
+            margin: 70px 20px 0 0;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
@@ -76,7 +86,8 @@ header{
                 -webkit-transition: .25s ease-in-out;
                 -moz-transition: .25s ease-in-out;
                 -o-transition: .25s ease-in-out;
-                transition: .25s ease-in-out;               
+                transition: .25s ease-in-out;
+                border: 2px solid #333;
             }
             
             span:nth-child(1){
@@ -124,11 +135,18 @@ header{
     }
     
     .header-menu{
+        position: absolute;
+        top: 110px;
+        right: 0px;
         justify-content: flex-end;
         margin: 10px 0 0 0;
         font-size: 24px;
-        display: none;
         z-index: 3;
+        opacity: 0;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        -o-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
         
         ul{
             background: rgba(106, 105, 105, 0.98);
@@ -137,11 +155,10 @@ header{
 
 
             li{
-                padding: 14px 144px 6px 6px;
+                padding: 14px 160px 6px 6px;
                 background: rgba(255, 255, 255, 0.31);
                 //border-bottom: 1px dotted #837e7e;
                 border-bottom: 2px solid rgba(144, 144, 144, 0.2);
-                
             }
             
             li:last-child{
@@ -151,10 +168,16 @@ header{
         }
     }
     
+    .header-menu.open{
+        opacity: 1;
+    }
+    
     .header-name{
         position: absolute;
-        margin-top: 160px;
+        margin-top: 180px;
         text-align: center;
         z-index: 2;
     }
 }
+
+/* @media for  */
