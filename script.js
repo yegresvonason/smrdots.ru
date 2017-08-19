@@ -14,6 +14,8 @@ $(document).ready(function(){
             });
             ishidden=true;
         }
+        
+        
         // открываем-скрываем меню:
         //$('.header-menu').toggle(500);
         //$('.header-menu').animate({width: 'toggle'}, 500);
