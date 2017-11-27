@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; }
+
+a { text-decoration: none; color: #333; }
+
+li { list-style: none; }
+
+header { background: #3e8; /*display: grid;
+align-items: center;
+justify-content: center;*/ }
+header .logo-container { border: 1px solid #333; display: inline-block; width: 50%; }
+header .header-menu { border: 1px solid #333; display: inline-block; text-align: right; }
+header .header-menu li { display: block; }
