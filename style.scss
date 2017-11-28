@@ -15,14 +15,16 @@ li{
 header{
 
 	background: #3e8;
-	/*display: grid;
-	align-items: center;
-	justify-content: center;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5px;
 
 	.logo-container{
 		border: 1px solid #333;
 		display: inline-block;
-		width: 50%;
+		height: 75px;
+		width: 40%;
 	}
 
 	.header-menu{
@@ -33,5 +35,9 @@ header{
 		li{
 			display: block;
 		}
+	}
+
+	.menu-content{
+		display: none;
 	}
 }
