@@ -1,48 +1,15 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\000031}}
-* {
-  margin: 0;
-  padding: 0; }
+* { margin: 0; padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\000036}}
-a {
-  text-decoration: none;
-  color: #333; }
+a { text-decoration: none; color: #333; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000311}}
-li {
-  list-style: none; }
+li { list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000315}}
-header {
-  background: #3e8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000324}}
-  header .logo-container {
-    border: 1px solid #333;
-    display: inline-block;
-    height: 75px;
-    width: 40%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000331}}
-  header .header-menu {
-    border: 1px solid #333;
-    display: inline-block;
-    text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000336}}
-    header .header-menu li {
-      border: 1px dotted #333;
-      display: block;
-      margin-bottom: 8px;
-      padding: 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000344}}
-  header .menu-content {
-    display: none; }
+header { /*background: #3e8;*/ display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; /*height: 150px;*/ -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 5px; }
+header .logo-container { border: 1px solid #333; display: inline-block; height: 75px; width: 40%; }
+header .header-menu { /*border: 1px solid #333;*/ display: inline-block; text-align: right; }
+header .header-menu ul li { /*border: 1px dotted #333;*/ background: #5f5; display: block; margin-bottom: 8px; padding: 2px; text-align: right; }
+header .header-menu ul li:nth-child(2) { margin-right: 10px; }
+header .header-menu ul li:nth-child(3) { margin-right: 20px; }
+header .header-menu ul li:nth-child(4) { margin-right: 30px; }
+header .header-menu ul li:nth-child(5) { margin-right: 40px; }
+header .menu-content { display: none; }
