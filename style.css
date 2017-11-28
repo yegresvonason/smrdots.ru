@@ -26,20 +26,23 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000324}}
   header .logo-container {
     border: 1px solid #333;
     display: inline-block;
     height: 75px;
     width: 40%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000331}}
   header .header-menu {
     border: 1px solid #333;
     display: inline-block;
     text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000336}}
     header .header-menu li {
-      display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000340}}
+      border: 1px dotted #333;
+      display: block;
+      margin-bottom: 8px;
+      padding: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000344}}
   header .menu-content {
     display: none; }
