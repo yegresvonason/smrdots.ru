@@ -18,6 +18,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between;*/
     background-image: url("header-background-320-copy.png");
+    background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
     /*background-position: center center;
@@ -29,7 +30,8 @@ header {
     padding: 5px;
 
     .logo-container {
-        border: 1px solid #333;
+        border: 1px solid #fff;
+        color: #fff;
         display: inline-block;
         float: left;
         height: 75px;
@@ -46,6 +48,7 @@ header {
             border: 1px solid #f1f1f1;
             border-radius: 4px;
             color: #f1f1f1;
+            cursor: pointer;
             margin: 0 auto;
             margin-bottom: 20px;
             text-align: center;
@@ -95,6 +98,13 @@ header {
         display: none;
         float: right;
     }
+
+    h3{
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 120px;
+        width: 50%;
+    }
 }
 
 header:after {
@@ -103,7 +113,65 @@ header:after {
     clear: both;
 }
 
+main{
+    background-color: #334;
+    color: #fff;
+
+    h3{
+        color: #fff;
+        font-family: 'Roboto Mono', monospace;
+    }
+}
+
+footer{
+    background-color: #845;
+}
+
 /* media */
+
+@media (min-width: 640px){
+    header{
+        background-image: url("header-background-640.jpg");
+        height: 480px;
+
+        h3{
+            color: #fff;
+            font-size: 21px;
+            margin-top: 360px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 920px){
+    header{
+        background-image: url("header-background-1600.jpg");
+        height: 680px;
+
+        h3{
+            font-size: 24px;
+            margin-top: 520px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        background-image: url("header-background-1920.jpg");
+    }
+}
+
+@media (min-width: 1280px){
+    header{
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h3{
+            font-size: 32px;
+        }
+    }
+}
 
 /*@media (min-device-width: 640px) and (max-device-width: 959px) {
     header {
