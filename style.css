@@ -1,20 +1,24 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\000031}}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\000037}}
 a {
   text-decoration: none;
   color: #333; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000312}}
 li {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000316}}
+.blur {
+  opacity: 0.1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000320}}
 header {
     /*display: flex;
 	flex-direction: row;
@@ -29,8 +33,9 @@ header {
 	background-size: cover;*/
   background-color: #464646;
   height: 300px;
-  padding: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000332}}
+  padding: 5px;
+  padding-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000337}}
   header .logo-container {
     border: 1px solid #fff;
     color: #fff;
@@ -38,91 +43,99 @@ header {
     float: left;
     height: 75px;
     width: 45%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000346}}
   header .header-menu {
-    /*border: 1px solid #333;*/
     float: right;
     display: block;
+    position: relative;
     width: 50%;
-    /*text-align: right;*/ }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000347}}
+    z-index: 999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000353}}
     header .header-menu #button-header {
       border: 1px solid #f1f1f1;
       border-radius: 4px;
       color: #f1f1f1;
       cursor: pointer;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
+      padding: 4px;
       text-align: center;
-      width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000358}}
+      width: 50%;
+      margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000366}}
     header .header-menu ul {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000369}}
       header .header-menu ul li {
-        /*border: 1px dotted #333;*/
-        /*background: #5f5;*/
-        background: rgba(139, 125, 125, 0.22);
-        border-radius: 10px;
+        border-bottom: 2px solid #000000;
         display: block;
         float: right;
+        font-family: 'Noto Serif', serif;
+        font-size: 15px;
         margin-right: 10px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         padding: 8px 4px;
         text-align: right;
         width: 80%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000381}}
         header .header-menu ul li a {
           color: #f1f1f1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000386}}
       header .header-menu ul li:nth-child(2) {
         margin-right: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000390}}
       header .header-menu ul li:nth-child(3) {
         margin-right: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000394}}
       header .header-menu ul li:nth-child(4) {
         margin-right: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\0000398}}
       header .header-menu ul li:nth-child(5) {
         margin-right: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003104}}
   header #menu-content {
     display: none;
     float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003102}}
-  header h3 {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 120px;
-    width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003109}}
+  header .header-caption {
+    position: absolute;
+    left: 50%;
+    margin-top: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003114}}
+    header .header-caption h3 {
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      left: -50%;
+      position: relative;
+      text-align: center;
+      z-index: 2; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003125}}
 header:after {
   content: "";
   display: table;
   clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003131}}
 main {
   background-color: #334;
   color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003135}}
   main h3 {
     color: #fff;
     font-family: 'Roboto Mono', monospace; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003141}}
 footer {
   background-color: #845; }
 
 /* media */
 @media (min-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003148}}
   header {
     background-image: url("header-background-640.jpg");
     height: 480px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003152}}
     header h3 {
       color: #fff;
       font-size: 21px;
@@ -130,24 +143,24 @@ footer {
       text-align: center;
       width: 100%; } }
 @media (min-width: 920px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003163}}
   header {
     background-image: url("header-background-1600.jpg");
     height: 680px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003167}}
     header h3 {
       font-size: 24px;
       margin-top: 520px; } }
 @media (min-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003175}}
   header {
     background-image: url("header-background-1920.jpg"); } }
 @media (min-width: 1280px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003181}}
   header {
     background-repeat: no-repeat;
     background-size: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/dev\/web\/smrdots\.ru\/style\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/yegresvonason\/Documents\/dev\/smrdots\/smrdots\.ru\/style\.scss}line{font-family:\00003185}}
     header h3 {
       font-size: 32px; } }
 /*@media (min-device-width: 640px) and (max-device-width: 959px) {

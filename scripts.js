@@ -21,5 +21,15 @@ $(document).ready(function(){
 
 	$("#button-header").click(function(){
 		$("#menu-content").toggle(800);
+        
+        // проверяем наличие класса blur:
+        if ($("#header-caption").hasClass("blur")){
+            $("#header-caption").removeClass("blur");
+        }
+        else{
+            $("#header-caption").addClass("blur");
+        }
+//        $("#header-caption").addClass("blur");
 	});
+    
 });
