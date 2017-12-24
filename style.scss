@@ -14,7 +14,7 @@ li {
 }
 
 .blur{
-    opacity: 0.1;
+    display: none;
 }
 
 header {
@@ -24,8 +24,9 @@ header {
     background-size: cover;
     background-color: #464646;
     height: 300px;
-    padding: 5px;
-    padding-top: 10px;
+    //padding: 5px;
+    //padding-top: 10px;
+    position: relative;
 
     .logo-container {
         border: 1px solid #fff;
@@ -33,102 +34,94 @@ header {
         display: inline-block;
         float: left;
         height: 75px;
-        width: 45%;
-    }
-
-    .header-menu {
-        float: right;
-        display: block;
+        margin: 10px 0 0 10px;
         position: relative;
-        width: 50%;
-        z-index: 999;
+        width: 45%;
+        z-index: 2;
+    }
+    
+    .button-menu{
+        //border: 1px solid #333;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 20;
         
-        #button-header {
-//            border: 1px solid #f1f1f1;
+        button{
+            background: none;
+            border: none;
             border-bottom: 2px solid rgba(0, 0, 255, 0.4);
-//            border-radius: 4px;
             color: #f1f1f1;
             cursor: pointer;
-            margin: 0 auto;
-            margin-bottom: 14px;
-            padding: 4px;
             text-align: center;
-            width: 50%;
-            margin-right: 10px;
-        }
-
-        ul {
-            width: 100%;
-
-            li {
-//                border-bottom: 2px solid #8d8d8d;
-                border-bottom: 2px solid rgba(255, 0, 0, 0.4);
-                display: block;
-                float: right;
-                font-family: 'Noto Serif', serif;
-                font-size: 15px;
-                letter-spacing: 0.06em;
-                margin-right: 10px;
-                margin-bottom: 12px;
-                padding: 8px 4px;
-                text-align: right;
-                transition: all 0.3s ease 0.1s;
-                width: 80%;
-
-                a {
-                    color: #f1f1f1;
-                    transition: color 0.3s ease 0.1s;
-                }
-            }
-            li:hover{
-                border-bottom: 3px solid rgba(0, 49, 255, 0.4);
-                font-size: 17px;
-                
-                a{
-                    color: #b5b5b5;
-                }
-            }
-
-            li:nth-child(2) {
-                margin-right: 20px;
-            }
-
-            li:nth-child(3) {
-                margin-right: 30px;
-            }
-
-            li:nth-child(4) {
-                margin-right: 40px;
-            }
-
-            li:nth-child(5) {
-                margin-right: 50px;
-            }
         }
     }
-
-    #menu-content {
+    
+    #menu-content{
+        background-color: #333;
+        background-image: url('menu-content-background-0.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
         display: none;
-        float: right;
+        height: 100%;
+        position: relative;
+        transition: all 0.3s ease-out;
+        width: 100%;
+        z-index: 10;
+        
+        .menu-content{
+            
+            li{
+                //border: 1px solid #333;
+                height: 30px;
+                line-height: 30px;
+                transition: all 0.3s ease-out;
+                
+                a{
+                    //border: 1px solid #fff;
+                    color: #f1f1f1;
+                    display: inline-block;
+                    height: 30px;
+                    transition: all 0.3s ease-out;
+                }
+                
+                a:hover{
+                    
+                }
+            }
+        }
     }
     
     .header-caption{
-        position: absolute;
-        left: 50%;
         margin-top: 210px;
-        width: 70%;
+        position: absolute;
+        //top: 210px;
+        width: 100%;
         
         h3{
-//        border: 1px solid #fff;
-        color: #ffffff;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 22px;
-        left: -50%;
-        position: relative;
-        text-align: center;
-        z-index: 2;
+            color: #f1f1f1;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            text-align: center;
         }
-    } 
+    }
+    
+//    .header-caption{
+//        position: absolute;
+//        left: 50%;
+//        margin-top: 210px;
+//        width: 70%;
+//        
+//        h3{
+//        color: #ffffff;
+//        font-family: 'Open Sans', sans-serif;
+//        font-size: 22px;
+//        left: -50%;
+//        position: relative;
+//        text-align: center;
+//        z-index: 2;
+//        }
+//    } 
 }
 
 header:after {
