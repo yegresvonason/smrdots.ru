@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+$font-stack: 'Spectral', serif;
+.display-block{display: block !important;}
+.display-none{display: none !important;}
+
+@mixin display($type){
+    -webkit-flex: $type;
+    -moz-flex: $type;
+    -ms-flex: $type;
+    -o-flex: $type;
+    display: $type;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#wrapper{
+    align-items: stretch;
+    @include display(flex);
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    
+    header{
+        background-attachment: fixed;
+        background-color: #9b9b9b;
+        background-image: url("../resources/header-background-min.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        positon: relative;
+        
+        .header-menu{
+            @include display(flex);
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            #logo{
+                //border: 1px solid #333;
+                margin: 8px 0 0 8px;
+                height: 20%;
+                position: relative;
+            
+                img{
+                    float: left;
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+                
+                p{
+                    //font-family: $font-stack;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                
+                p:nth-of-type(1){
+                    //border: 1px solid #333;
+                    float: left;
+                    margin: 10px 0 0 10px;
+                    text-align: left;
+                }
+                
+                p:nth-of-type(2){
+                    margin: 20px 0 0 0;
+                    //left: 50px;
+                    text-align: center;
+                    //top: 50px;
+                }
+            }
+            
+            #menu-nav{
+                background-attachment: fixed;
+                background-color: #9b9b9b;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 350px;
+                position: absolute;
+                padding-left: 10px;
+                width: 100%;
+
+                ul{
+                    margin-top: 15px;
+
+                    li{
+                        display: block;
+                        margin-bottom: 10px;
+
+                        a{
+                            color: #fff;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            
+            .area-menu-button{
+                //border: 1px solid #333;
+                position: absolute;
+                right: 10px;
+                top: 15px;
+
+                #menu-button{
+                    cursor: pointer;
+                    font-family: $font-stack;
+                    font-size: 16px;
+                }
+            }
+        }                
+        
+        .header-content{
+        }
+        
+    }
+    
+    main{
+        background-color: #3d3f4c;
+        padding: 0 10px;
+        position: relative;
+        
+        h2{
+            color: #fff;
+            font-family: $font-stack;
+            font-size: 17px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: underline;
+        }
+        p{
+            color: #fff;
+            font-family: $font-stack;
+            text-indent: 15px;
+        }
+        
+        #news{
+            
+            h1{
+                //border: 1px solid #fff;
+                color: #fff;
+                font-family: $font-stack;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 20px 0 10px 0;
+                text-align: center;
+            }
+        }
+        
+        #about{
+            
+            p{
+                
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+                
+                a:hover{
+                    color: #6c75de;
+                    font-style: italic;
+                }
+            }
+        }
+        
+        #docs{
+            
+            p{
+                //border: 1px solid #fff;
+                text-align: center;
+                text-indent: 0px;
+                
+                a{
+                    color: #fff;
+                    font-style: italic;
+                }
+                
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+            .left{
+                float: left;
+            }
+            
+            .right{
+                float: right;
+            }
+            
+        }
+        
+        #events{
+            //border: 1px solid #fff;
+            margin-bottom: 15px;
+            
+            p{
+//                border: 1px solid #fff;
+                text-align: center;
+            }
+        }
+    }
+    
+    footer{
+        background-color: #485158;
+        height: 250px;
+        padding: 0 10px;
+        position: relative;
+        
+        #contacts{
+            
+            color: #fff;
+            
+            h2{
+                color: #fff;
+                font-family: $font-stack;
+                font-size: 17px;
+                margin: 10px 0;
+                text-align: center;
+                text-decoration: underline;
+            }
+            
+            p{
+                color: #fff;
+                font-family: $font-stack;
+                text-indent: 15px;
+            }
+            
+            ul{
+                color: #fff;
+                font-family: $font-stack;
+                margin-left: 15px;
+                //text-indent: 15px;
+                
+                li{
+                    color: #fff;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px){
+    
+}
+
+/*@media screen and (min-width: 640px){
+    
+}*/
+
+@media screen and (min-width: 720px){
+    
+}
+
+@media screen and (min-width: 1024px){
+    
+}
+
+@media screen and (min-width: 1440px){
+    
+}
+
+@media screen and (min-width: 1920px){
+    
+}

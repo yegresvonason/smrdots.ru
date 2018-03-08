@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.display-block {
+  display: block !important; }
+
+.display-none {
+  display: none !important; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#wrapper {
+  align-items: stretch;
+  -webkit-flex: flex;
+  -moz-flex: flex;
+  -ms-flex: flex;
+  -o-flex: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative; }
+  #wrapper header {
+    background-attachment: fixed;
+    background-color: #9b9b9b;
+    background-image: url("../resources/header-background-min.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    positon: relative; }
+    #wrapper header .header-menu {
+      -webkit-flex: flex;
+      -moz-flex: flex;
+      -ms-flex: flex;
+      -o-flex: flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #wrapper header .header-menu #logo {
+        margin: 8px 0 0 8px;
+        height: 20%;
+        position: relative; }
+        #wrapper header .header-menu #logo img {
+          float: left;
+          max-width: 50px;
+          max-height: 50px; }
+        #wrapper header .header-menu #logo p {
+          font-size: 14px;
+          font-weight: 600; }
+        #wrapper header .header-menu #logo p:nth-of-type(1) {
+          float: left;
+          margin: 10px 0 0 10px;
+          text-align: left; }
+        #wrapper header .header-menu #logo p:nth-of-type(2) {
+          margin: 20px 0 0 0;
+          text-align: center; }
+      #wrapper header .header-menu #menu-nav {
+        background-attachment: fixed;
+        background-color: #9b9b9b;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        position: absolute;
+        padding-left: 10px;
+        width: 100%; }
+        #wrapper header .header-menu #menu-nav ul {
+          margin-top: 15px; }
+          #wrapper header .header-menu #menu-nav ul li {
+            display: block;
+            margin-bottom: 10px; }
+            #wrapper header .header-menu #menu-nav ul li a {
+              color: #fff;
+              font-size: 16px; }
+      #wrapper header .header-menu .area-menu-button {
+        position: absolute;
+        right: 10px;
+        top: 15px; }
+        #wrapper header .header-menu .area-menu-button #menu-button {
+          cursor: pointer;
+          font-family: "Spectral", serif;
+          font-size: 16px; }
+  #wrapper main {
+    background-color: #3d3f4c;
+    padding: 0 10px;
+    position: relative; }
+    #wrapper main h2 {
+      color: #fff;
+      font-family: "Spectral", serif;
+      font-size: 17px;
+      margin: 10px 0;
+      text-align: center;
+      text-decoration: underline; }
+    #wrapper main p {
+      color: #fff;
+      font-family: "Spectral", serif;
+      text-indent: 15px; }
+    #wrapper main #news h1 {
+      color: #fff;
+      font-family: "Spectral", serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 0 10px 0;
+      text-align: center; }
+    #wrapper main #about p a {
+      color: #fff;
+      text-decoration: none; }
+    #wrapper main #about p a:hover {
+      color: #6c75de;
+      font-style: italic; }
+    #wrapper main #docs p {
+      text-align: center;
+      text-indent: 0px; }
+      #wrapper main #docs p a {
+        color: #fff;
+        font-style: italic; }
+      #wrapper main #docs p a:hover {
+        text-decoration: underline; }
+    #wrapper main #docs .left {
+      float: left; }
+    #wrapper main #docs .right {
+      float: right; }
+    #wrapper main #events {
+      margin-bottom: 15px; }
+      #wrapper main #events p {
+        text-align: center; }
+  #wrapper footer {
+    background-color: #485158;
+    height: 250px;
+    padding: 0 10px;
+    position: relative; }
+    #wrapper footer #contacts {
+      color: #fff; }
+      #wrapper footer #contacts h2 {
+        color: #fff;
+        font-family: "Spectral", serif;
+        font-size: 17px;
+        margin: 10px 0;
+        text-align: center;
+        text-decoration: underline; }
+      #wrapper footer #contacts p {
+        color: #fff;
+        font-family: "Spectral", serif;
+        text-indent: 15px; }
+      #wrapper footer #contacts ul {
+        color: #fff;
+        font-family: "Spectral", serif;
+        margin-left: 15px; }
+        #wrapper footer #contacts ul li {
+          color: #fff;
+          margin-left: 25px; }
+
+/*@media screen and (min-width: 640px){
+    
+}*/
