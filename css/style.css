@@ -3,7 +3,8 @@
   color: #333;
   margin: 0;
   padding: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.4s ease; }
 
 .display-block {
   display: block !important; }
@@ -72,7 +73,10 @@
             margin-bottom: 10px; }
             #wrapper header .header-menu #menu-nav ul li a {
               color: #fff;
-              font-size: 16px; }
+              font-size: 16px;
+              padding-left: 4px; }
+            #wrapper header .header-menu #menu-nav ul li a:hover {
+              border-left: 4px solid #6c75de; }
       #wrapper header .header-menu .area-menu-button {
         position: absolute;
         right: 10px;
@@ -81,6 +85,8 @@
           cursor: pointer;
           font-family: "Spectral", serif;
           font-size: 16px; }
+        #wrapper header .header-menu .area-menu-button #menu-button:hover {
+          color: #fff; }
   #wrapper main {
     background-color: #3d3f4c;
     padding: 0 10px;
@@ -97,7 +103,7 @@
       font-family: "Spectral", serif;
       text-indent: 15px; }
     #wrapper main #news h1 {
-      color: #fff;
+      color: #e2e2e2;
       font-family: "Spectral", serif;
       font-size: 18px;
       font-weight: 600;
@@ -116,6 +122,7 @@
         border-radius: 40px;
         border: 1px solid #a29f9f;
         height: 80px;
+        margin-bottom: 10px;
         width: 80px; }
     #wrapper main #docs p {
       text-align: center;
@@ -165,6 +172,62 @@
           margin-right: 6px;
           width: 30px; }
 
-/*@media screen and (min-width: 640px){
-    
-}*/
+@media screen and (min-width: 480px) {
+  header {
+    height: 500px !important; }
+    header #logo {
+      width: 50% !important; }
+      header #logo img {
+        height: 60px !important;
+        width: 60px !important;
+        margin-right: 5px !important; }
+      header #logo p:nth-of-type(1) {
+        margin-top: 10px !important; }
+    header #menu-nav {
+      height: 100% !important; }
+  main h1 {
+    font-size: 20px !important; }
+  main #about #photos img {
+    border-radius: 80px !important;
+    height: 160px !important;
+    width: 160px !important; } }
+
+@media screen and (min-width: 720px) {
+  header {
+    height: 700px !important; }
+    header #logo {
+      margin: 8px 0 0 18px !important; }
+      header #logo img {
+        height: 90px !important;
+        width: 90px !important; }
+      header #logo p {
+        font-size: 16px !important; }
+    header #menu-nav {
+      padding: 10px 0 0 20px !important; }
+    header .area-menu-button {
+      right: 20px !important; }
+  main h1 {
+    font-size: 21px !important; } }
+
+@media screen and (min-width: 1024px) {
+  header #logo {
+    margin: 18px 0 0 28px !important; }
+    header #logo img {
+      height: 160px !important;
+      width: 160px !important; }
+  header #menu-nav {
+    padding: 20px 0 0 30px !important; }
+    header #menu-nav ul li a {
+      font-size: 18px !important; }
+  header .area-menu-button {
+    right: 30px !important;
+    top: 30px !important; }
+  main {
+    padding: 0 20px !important; } }
+
+@media screen and (min-width: 1440px) {
+  header #logo {
+    margin: 30px 0 0 30px !important; }
+  header .area-menu-button {
+    right: 40px !important;
+    top: 40px !important; } }

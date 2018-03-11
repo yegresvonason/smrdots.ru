@@ -18,6 +18,17 @@ $font-stack: 'Spectral', serif;
     display: $type;
 }
 
+@mixin transition($type){
+    -webkit-transition: $type;
+    -moz-transition: $type;
+    -o-transition: $type;
+    transition: $type;
+}
+
+*{
+  include transition(all 0.4s ease);  
+}
+
 .clearfix::after{
     content: "";
     display: table;
@@ -59,6 +70,8 @@ $font-stack: 'Spectral', serif;
                     max-height: 50px;
                 }
                 
+                
+                
                 p{
                     font-size: 14px;
                     font-weight: 600;
@@ -86,6 +99,12 @@ $font-stack: 'Spectral', serif;
                         a{
                             color: #fff;
                             font-size: 16px;
+                            padding-left: 4px;
+                        }
+                        
+                        a:hover{
+                            border-left: 4px solid #6c75de;
+                            //color: #6c75de;
                         }
                     }
                 }
@@ -102,10 +121,11 @@ $font-stack: 'Spectral', serif;
                     font-family: $font-stack;
                     font-size: 16px;
                 }
+                
+                #menu-button:hover{
+                    color: #fff;
+                }
             }
-        }                
-        
-        .header-content{
         }
         
     }
@@ -132,8 +152,7 @@ $font-stack: 'Spectral', serif;
         #news{
             
             h1{
-                //border: 1px solid #fff;
-                color: #fff;
+                color: #e2e2e2;
                 font-family: $font-stack;
                 font-size: 18px;
                 font-weight: 600;
@@ -165,6 +184,7 @@ $font-stack: 'Spectral', serif;
                     border-radius: 40px;
                     border: 1px solid #a29f9f;
                     height: 80px;
+                    margin-bottom: 10px;
                     width: 80px;
                 }
             }
@@ -173,7 +193,6 @@ $font-stack: 'Spectral', serif;
         #docs{
             
             p{
-                //border: 1px solid #fff;
                 text-align: center;
                 text-indent: 0px;
                 
@@ -198,11 +217,9 @@ $font-stack: 'Spectral', serif;
         }
         
         #events{
-            //border: 1px solid #fff;
             margin-bottom: 15px;
             
             p{
-//                border: 1px solid #fff;
                 text-align: center;
             }
         }
@@ -245,12 +262,9 @@ $font-stack: 'Spectral', serif;
                 text-align: center;
                 
                 a{
-                    //border: 1px solid #fff;
-                    //display: inline-block;
                     text-align: center;
                     
                     img{
-//                        border: 1px solid #fff;
                         display: inline-block;
                         height: 30px;
                         margin-right: 6px;
@@ -265,24 +279,131 @@ $font-stack: 'Spectral', serif;
 
 @media screen and (min-width: 480px){
     
+    header{
+        height: 500px !important;
+        
+        #logo{
+            width: 50% !important;
+            
+            img{
+                height: 60px !important;
+                width: 60px !important;
+                margin-right: 5px !important;
+            }
+            
+            p:nth-of-type(1){
+                margin-top: 10px !important;
+            }
+        }
+        
+        #menu-nav{
+            height: 100% !important;
+        }
+    }
+    
+    main{
+        
+        h1{
+            font-size: 20px !important;
+        }
+        
+        #about{
+        
+            #photos{
+            
+                img{
+                    border-radius: 80px !important;
+                    height: 160px !important;
+                    width: 160px !important;
+                }
+            }
+        }
+    }  
 }
 
-/*@media screen and (min-width: 640px){
-    
-}*/
-
 @media screen and (min-width: 720px){
+    
+    header{
+        height: 700px !important;
+        
+        #logo{
+            margin: 8px 0 0 18px !important;
+            
+            img{
+                height: 90px !important;
+                width: 90px !important;
+            }
+            
+            p{
+                font-size: 16px !important;
+            }
+        }
+        
+        #menu-nav{
+            padding: 10px 0 0 20px !important;
+        }
+        
+        .area-menu-button{
+            right: 20px !important;
+        }
+    }
+    
+    main{
+        
+        h1{
+            font-size: 21px !important;
+        }
+    }
     
 }
 
 @media screen and (min-width: 1024px){
     
+    header{
+        
+        #logo{
+            margin: 18px 0 0 28px !important;
+            
+            img{
+                height: 160px !important;
+                width: 160px !important;
+            }
+        }
+        
+        #menu-nav{
+            padding: 20px 0 0 30px !important;
+            
+            ul{
+                li{
+                    a{
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+        
+        .area-menu-button{
+            right: 30px !important;
+            top: 30px !important;
+        }
+    }
+    
+    main{
+        padding: 0 20px !important;
+    }
 }
 
 @media screen and (min-width: 1440px){
     
-}
-
-@media screen and (min-width: 1920px){
-    
+    header{
+        
+        #logo{
+            margin: 30px 0 0 30px !important;
+        }
+        
+        .area-menu-button{
+            right: 40px !important;
+            top: 40px !important;
+        }
+    }
 }
