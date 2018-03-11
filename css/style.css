@@ -55,13 +55,6 @@
         #wrapper header .header-menu #logo p {
           font-size: 14px;
           font-weight: 600; }
-        #wrapper header .header-menu #logo p:nth-of-type(1) {
-          float: left;
-          margin: 10px 0 0 10px;
-          text-align: left; }
-        #wrapper header .header-menu #logo p:nth-of-type(2) {
-          margin: 20px 0 0 0;
-          text-align: center; }
       #wrapper header .header-menu #menu-nav {
         background-attachment: fixed;
         background-color: #9b9b9b;
@@ -93,7 +86,7 @@
     padding: 0 10px;
     position: relative; }
     #wrapper main h2 {
-      color: #fff;
+      color: #9aa4f0;
       font-family: "Spectral", serif;
       font-size: 17px;
       margin: 10px 0;
@@ -116,6 +109,14 @@
     #wrapper main #about p a:hover {
       color: #6c75de;
       font-style: italic; }
+    #wrapper main #about #photos {
+      margin-top: 10px;
+      text-align: center; }
+      #wrapper main #about #photos img {
+        border-radius: 40px;
+        border: 1px solid #a29f9f;
+        height: 80px;
+        width: 80px; }
     #wrapper main #docs p {
       text-align: center;
       text-indent: 0px; }
@@ -134,29 +135,35 @@
         text-align: center; }
   #wrapper footer {
     background-color: #485158;
-    height: 250px;
     padding: 0 10px;
     position: relative; }
-    #wrapper footer #contacts {
-      color: #fff; }
-      #wrapper footer #contacts h2 {
+    #wrapper footer #contacts h2 {
+      color: #9aa4f0;
+      font-family: "Spectral", serif;
+      font-size: 17px;
+      margin: 10px 0;
+      text-align: center;
+      text-decoration: underline; }
+    #wrapper footer #contacts p {
+      color: #fff;
+      text-indent: 15px; }
+    #wrapper footer #contacts ul {
+      color: #fff;
+      font-family: "Spectral", serif;
+      margin: 10px 0 0 15px; }
+      #wrapper footer #contacts ul li {
         color: #fff;
-        font-family: "Spectral", serif;
-        font-size: 17px;
-        margin: 10px 0;
-        text-align: center;
-        text-decoration: underline; }
-      #wrapper footer #contacts p {
-        color: #fff;
-        font-family: "Spectral", serif;
-        text-indent: 15px; }
-      #wrapper footer #contacts ul {
-        color: #fff;
-        font-family: "Spectral", serif;
-        margin-left: 15px; }
-        #wrapper footer #contacts ul li {
-          color: #fff;
-          margin-left: 25px; }
+        margin-left: 25px; }
+    #wrapper footer #contacts #icons {
+      margin: 10px 0;
+      text-align: center; }
+      #wrapper footer #contacts #icons a {
+        text-align: center; }
+        #wrapper footer #contacts #icons a img {
+          display: inline-block;
+          height: 30px;
+          margin-right: 6px;
+          width: 30px; }
 
 /*@media screen and (min-width: 640px){
     

@@ -60,23 +60,8 @@ $font-stack: 'Spectral', serif;
                 }
                 
                 p{
-                    //font-family: $font-stack;
                     font-size: 14px;
                     font-weight: 600;
-                }
-                
-                p:nth-of-type(1){
-                    //border: 1px solid #333;
-                    float: left;
-                    margin: 10px 0 0 10px;
-                    text-align: left;
-                }
-                
-                p:nth-of-type(2){
-                    margin: 20px 0 0 0;
-                    //left: 50px;
-                    text-align: center;
-                    //top: 50px;
                 }
             }
             
@@ -131,7 +116,7 @@ $font-stack: 'Spectral', serif;
         position: relative;
         
         h2{
-            color: #fff;
+            color: #9aa4f0;
             font-family: $font-stack;
             font-size: 17px;
             margin: 10px 0;
@@ -169,6 +154,18 @@ $font-stack: 'Spectral', serif;
                 a:hover{
                     color: #6c75de;
                     font-style: italic;
+                }
+            }
+            
+            #photos{
+                margin-top: 10px;
+                text-align: center;
+                
+                img{
+                    border-radius: 40px;
+                    border: 1px solid #a29f9f;
+                    height: 80px;
+                    width: 80px;
                 }
             }
         }
@@ -213,16 +210,13 @@ $font-stack: 'Spectral', serif;
     
     footer{
         background-color: #485158;
-        height: 250px;
         padding: 0 10px;
         position: relative;
         
         #contacts{
             
-            color: #fff;
-            
             h2{
-                color: #fff;
+                color: #9aa4f0;
                 font-family: $font-stack;
                 font-size: 17px;
                 margin: 10px 0;
@@ -232,21 +226,39 @@ $font-stack: 'Spectral', serif;
             
             p{
                 color: #fff;
-                font-family: $font-stack;
                 text-indent: 15px;
             }
             
             ul{
                 color: #fff;
                 font-family: $font-stack;
-                margin-left: 15px;
-                //text-indent: 15px;
+                margin: 10px 0 0 15px;
                 
                 li{
                     color: #fff;
                     margin-left: 25px;
                 }
             }
+            
+            #icons{
+                margin: 10px 0;
+                text-align: center;
+                
+                a{
+                    //border: 1px solid #fff;
+                    //display: inline-block;
+                    text-align: center;
+                    
+                    img{
+//                        border: 1px solid #fff;
+                        display: inline-block;
+                        height: 30px;
+                        margin-right: 6px;
+                        width: 30px;
+                    }
+                }
+            }
+            
         }
     }
 }
