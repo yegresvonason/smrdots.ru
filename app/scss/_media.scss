@@ -1,0 +1,82 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+.menu__container{
+		padding-left: 40px !important; // Вот эта хуйня не работает! Блять..
+
+	}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+	// .menu__container{
+	// 	padding-left: 40px !important; // Вот эта хуйня не работает! Блять..
+
+	// }
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+	#navButton{
+		display: none;
+	}
+
+	.menu__container{
+		margin-top: 0 !important;
+		display: flex;
+		align-items: center;
+	}
+
+	.menu__content{
+		display: block !important;
+		margin: auto;
+	}
+	.menu__content>li{
+			display: inline-block !important;
+			margin-right: 31px; // original is 10px
+	}
+	.sub__menu__content {
+		position: absolute;
+	}
+	.sub__menu__content li:first-child {
+		margin-top: 10px;
+	}
+	#sub-li {
+		//top: 8px;
+		left: 65px !important;
+	}
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

@@ -1,0 +1,346 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+html, body {
+	height: 100%;
+}
+
+/* ====== common styles --start ====== */
+
+	.hidden{
+		display: none;
+	}
+
+	.block{
+		display: block;
+	}
+
+	.displayNone{
+		display: none !important;
+	}
+
+	%navButtonDefault{
+		cursor: pointer;
+		display: block;
+		width: 45px;
+		height: 45px;
+		transition: all 0.4s ease;
+	}
+
+	%iconDefault{
+		background-repeat: no-repeat !important;
+		background-position: 0 0 !important;
+		background-size: cover !important;
+		display: block;
+		width: 35px;
+		height: 35px;
+	}
+
+	.fb__icon{
+		@extend %iconDefault;
+		background: url('../img/social/fb.svg');
+	}
+
+	.vk__icon{
+		@extend %iconDefault;
+		background: url('../img/social/vk.svg');
+	}
+
+	.ok__icon{
+		@extend %iconDefault;
+		background: url('../img/social/ok.svg');
+	}
+
+	.tw__icon{
+		@extend %iconDefault;
+		background: url('../img/social/tw.svg');
+	}
+
+	.github__icon{
+		@extend %iconDefault;
+		background: url('../img/social/github.svg');
+	}
+
+	.insta__icon{
+		@extend %iconDefault;
+		background: url('../img/social/insta.svg');
+	}
+
+/* ====== common styles --end ====== */
+
+
+
+
+
+
+
+/* ====== progressbar --start ====== */
+
+.progressbar{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	div{
+		height: 4px;
+		background: #628CFD; // if browser doesn't supports linear-gradient
+		background: linear-gradient(to right, #628CFD, #96FF5C);
+		width: 0%;
+	}
+}
+
+/* ====== progressbar --end ====== */
+
+
+
+
+body {
+	background-color: rgba(51, 51, 51, 0.5);
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+
+	// background-image: url('../img/body__background.png');
+	// background-size: cover;
+	// background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+
+/* ====== header -start ====== */
+
+header{
+	box-shadow: 0 1px 1px #eee;
+	background-color: rgba(51, 51, 51, 0.5);
+	background: url(../img/header-background-1.jpeg) 0 0 no-repeat;
+	background-size: cover;
+	min-height: 180px;
+
+	.header__container{
+		background: rgba(51, 51, 51, 0.7);
+		min-height: 180px;
+	}
+
+		.logo__container{
+			text-align: center;
+
+			object{
+				max-width: 100px;
+				max-height: 150px;
+				background-image: url("../img/logo.svg");
+				background-size: 100px 150px;
+			}
+		}
+
+		.menu__container{
+			margin-top: 10px;
+
+			#navButton{
+				margin-bottom: 10px;
+			}
+
+			.openButton{
+				@extend %navButtonDefault;
+				background: url(../img/navButtonWhite.png) no-repeat;
+				background-size: cover !important;
+			}
+
+			.closeButton{
+				@extend %navButtonDefault;
+				background: url(../img/navButtonCloseWhite.png) no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.menu__content {
+			padding: 0;
+
+			li {
+				a {
+					color: rgba(255, 255, 255, 0.74);
+					text-decoration: none;
+					text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.74);
+					font-size: 19px;
+					transition: all 0.4s ease;
+				}
+			}
+		}
+
+		.menu__content li {
+			display: block;
+			list-style: none;
+			margin-bottom: 10px;
+			position: relative;
+		}
+
+		.menu__content a:hover {
+			border-bottom: 2px solid #fff;
+			color: rgba(255, 255, 255, 0.8);
+			text-shadow: 5px -3px 8px rgba(255, 255, 255, 0.99);
+		}
+
+		#sub-li{
+			background-image: url(../img/fa/angle-down-v.svg);
+			background-size: 30px 25px;
+			background-repeat: no-repeat;
+			color: rgba(255, 255, 255, 0.74); // origin property
+			cursor: pointer; // origin property
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 5px;
+			left: 70px;
+		}
+
+		#sub-li:hover{
+			color: rgba(255, 255, 255, 0.99);
+		}
+}
+
+/* ====== header -end ====== */
+
+
+
+
+
+
+/* ====== main block --start ====== */
+
+
+main{
+	background: url(../img/body__background.png) no-repeat;
+	background-size: cover;
+
+	h1, h2 {
+		color: #fff;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+	}
+
+	p {
+		color: #fff;
+		font-family: 'PT Sans', sans-serif;
+	}
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+}
+
+.main__container{
+	background: rgba(51, 51, 51, 0.7);
+}
+
+.about__container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 10px;
+
+	h2, p{
+		color: #fff;
+	}
+}
+
+.photo-container{
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.thumb{
+	background-color: rgba(117, 117, 117, 0.6); // Возможно исправить этот стиль
+	border: 1px solid #757575; // Возможно исправить этот стиль
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(199,199,199,0.75);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(199,199,199,0.75);
+	box-shadow: 0px 0px 10px 2px rgba(199,199,199,0.75);
+	text-align: center;
+	margin: 10px;
+	height: 250px;
+	width: 250px;
+	position: relative;
+	overflow: hidden;
+}
+
+.text__content{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -50%;
+	width: 100%;
+
+	.social__container{
+		//border: 1px dotted #eee;
+
+		span{
+			display: inline-block;
+		}
+	}
+
+	h2{
+		color: #404040;
+	}
+}
+
+.image__wrapper{
+
+	// v2.0
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 250px;
+
+	img{
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+/* ====== main block --end ====== */
+
+
+/* .img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+} */
+
+.text-center {
+	text-align: center;
+}
+
+@import "media"; // Always at the end
