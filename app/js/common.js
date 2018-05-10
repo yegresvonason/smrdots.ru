@@ -55,10 +55,28 @@ $(function() {
 
 	/* ====== show .image__wrapper --start ====== */
 
-	$('.thumb').hover(function(){
+	$('.thumb:nth-child(1)').hover(function(){
 		$(this).children('.image__wrapper').stop().animate({marginTop: '100%', opacity: 0}, 600);
 	}, function(){
 		$(this).children('.image__wrapper').stop().animate({marginTop: '0%', opacity: 1}, 600);
+	});
+
+	$('.thumb:nth-child(2)').hover(function(){
+		$(this).children('.image__wrapper').stop().animate({marginLeft: '100%', opacity: 0}, 600);
+	}, function(){
+		$(this).children('.image__wrapper').stop().animate({marginLeft: '0%', opacity: 1}, 600);
+	});
+
+	$('.thumb:nth-child(3)').hover(function(){
+		$(this).children('.image__wrapper').stop().animate({marginBottom: '100%', opacity: 0}, 600);
+	}, function(){
+		$(this).children('.image__wrapper').stop().animate({marginBottom: '0%', opacity: 1}, 600);
+	});
+
+	$('.thumb:nth-child(4)').hover(function(){
+		$(this).children('.image__wrapper').stop().animate({marginRight: '100%', opacity: 0}, 600);
+	}, function(){
+		$(this).children('.image__wrapper').stop().animate({marginRight: '0%', opacity: 1}, 600);
 	});
 
 
