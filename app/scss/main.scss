@@ -203,9 +203,9 @@ header{
 		}
 
 		.menu__content a:hover {
-			border-bottom: 2px solid #fff;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 			color: rgba(255, 255, 255, 0.8);
-			text-shadow: 5px -3px 8px rgba(255, 255, 255, 0.99);
+			text-shadow: 3px -3px 18px rgba(255, 255, 255, 0.99);
 		}
 
 		#sub-li{
@@ -262,6 +262,23 @@ h1{
 	background: rgba(51, 51, 51, 0.7);
 }
 
+.news__container {
+
+	h2 {
+		text-align: center;
+	}
+
+	.news__content {
+		display: flex;
+		justify-content: space-around;
+
+		.news__item {
+			border: 1px solid #fff;
+		}
+	}
+
+}
+
 .about__container{
 	display: flex;
 	justify-content: center;
@@ -276,6 +293,10 @@ h1{
 .photo-container{
 	margin: 0 auto;
 	padding: 10px;
+
+	h2 {
+		text-align: center;
+	}
 }
 
 .thumb{
