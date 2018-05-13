@@ -4,16 +4,30 @@ $(function() {
 
 	/* ====== progressbar --start ====== */
 
-	var bar = document.querySelector('.progressbar div');
+	var bar = document.querySelector('.progressbar div'),
+		header = document.querySelector('.header__container');
 	addEventListener('scroll', function(){
 		var max = document.body.scrollHeight - innerHeight;
 		var percent = (pageYOffset / max) * 100;
 		bar.style.width = percent + '%';
+
+		if (pageYOffset >= 150) {
+			$('.header__container').addClass('fixed__header');
+			console.warn('now header must stay in top');
+		} else $('.header__container').removeClass('fixed__header');
 	});
 
 	/* ====== progressbar --end ====== */
 
 
+
+
+
+/* ====== header static --start ====== */
+
+
+
+/* ====== header static --end ====== */
 
 
 

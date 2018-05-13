@@ -3,47 +3,57 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
+// ≤1200px
 @include media-breakpoint-down(lg) {
 	
 }
 
-// ≥992px
+// ≤992px
 @include media-breakpoint-down(md) {
 
 }
 
-// ≥768px
+// ≤768px
 @include media-breakpoint-down(sm) {
 
 }
 
-// ≥576px
+// ≤576px
 @include media-breakpoint-down(xs) {
-.menu__container{
-		padding-left: 40px !important; // Вот эта хуйня не работает! Блять..
+
+	.menu__container{
+
+		padding-left: 40px !important;
 
 	}
+
 }
 
 
 /*==========  Mobile First  ==========*/
 
-// ≤576px
+// ≥576px
 @include media-breakpoint-up(sm) {
 
 	// .menu__container{
 	// 	padding-left: 40px !important; // Вот эта хуйня не работает! Блять..
 
 	// }
+
+	.documents__container {
+	
+		height: 480px !important;
+	
+	}
+
 }
 
-// ≤768px
+// ≥768px
 @include media-breakpoint-up(md) {
 
 }
 
-// ≤992px
+// ≥992px
 @include media-breakpoint-up(lg) {
 
 	#navButton{
@@ -76,7 +86,7 @@
 	}
 }
 
-// ≤1200px
+// ≥1200px
 @include media-breakpoint-up(xl) {
 	
 }
