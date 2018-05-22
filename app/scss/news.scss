@@ -2,6 +2,7 @@
 
 /* ======== Общие стили =======> */
 
+$link-color: rgba(255, 255, 255, 0.9);
 
 * {
 
@@ -9,13 +10,25 @@
 	padding: 0;
 	box-sizing: border-box;
 
-	color: rgba(255, 255, 255, 0.9);
+	color: $link-color;
 
 	text-decoration: none;
 }
 
 a {
-	color: rgba(255, 255, 255, 0.9);
+	color: $link-color;
+}
+a:hover {
+	color: $link-color;
+	text-decoration: none;
+}
+a:active {
+	color: $link-color;
+	text-decoration: none;
+}
+
+body {
+	background: rgba(51, 51, 51, 0.9);
 }
 
 button:focus {
@@ -36,53 +49,107 @@ ul {
 	display: none;
 }
 
+.i {
+	font-style: italic;
+}
+
+.delete {
+	text-decoration: line-through;
+}
+
+.tdn {
+	font-style: normal;
+	text-decoration: none;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+.progressbar{
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+
+	div{
+		height: 4px;
+		background: #628CFD; // if browser doesn't supports linear-gradient
+        background: linear-gradient(to right, rgba(3, 71, 253, 0.83), rgba(255, 0, 29, 0.83));
+		width: 0%;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+}
+
+::-webkit-scrollbar-track {
+  background: #666; 
+}
+
 /* <======= Общие стили ========*/
 
-header {
+@import '_partial/header';
 
-	background: url(../resources/img/header__background_min.jpg) no-repeat;
+main {
+
+	background: url(../resources/img/news__background.jpg) no-repeat;
 	background-position: center center;
 	background-size: cover;
 
-	.header__content {
+	position: relative;
+	padding-top: 86px;
+	z-index: 1;
 
-		background: rgba(51, 51, 51, 0.8);
-		padding: 10px;
+	.main__content {
 
-		.header__content_logo {
+		font-size: 18px;
 
+		background: rgba(39, 40, 47, 0.9);
+
+		padding: 20px 10px 10px;
+
+		h1, h2 {
 			text-align: center;
 
-			object {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 2rem;
 
-				max-width: 60px;
-				max-height: 60px;
-				background: url(../resources/img/logo.svg) no-repeat;
-				background-size: 60px 60px;
+			margin: 30px 0;
+		}
+		h2 {
 
-			}
+			border-radius: 8px;
+			box-shadow: 0px -2px rgba(255, 255, 255, 0.7);
 
+			font-size: 1.8rem;
+
+			margin: 20px 0 40px;
+			padding: 30px 5px;
 		}
 
-		.header__content_menu {
+		p {
+			margin-top: 1rem;
+			padding: 0 5px;
+
+			text-align: justify;
+		}
+
+		.author {
+			
+			margin-bottom: 30px;
+
+			font-style: italic;
 
 			text-align: right;
-
-			ul li ul li {
-				padding-right: 35px;
-				text-align: left;
-			}
-
-		}
-
-		.header__content_menu>ul>li {
-			border-bottom: 1px solid rgba(255, 255, 255, 0.9);
 		}
 
 	}
 
 }
 
-h1 {
-	color: #fff;
-}
+@import '_partial/footer';
