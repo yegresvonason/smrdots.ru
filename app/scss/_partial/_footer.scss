@@ -1,0 +1,59 @@
+footer {
+
+	height: 100%;
+    
+    background: rgba(43, 38, 75, 0.88);
+
+	.footer__content {
+
+		padding: 0 30px;
+		padding-top: 20px;
+
+		text-align: center;
+
+		.footer__content_links {
+
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+			border-radius: 10px;
+
+			text-align: center;
+
+			margin-bottom: 15px;
+
+			a {
+
+				display: inline-block;
+
+				height: 100%;
+
+				margin: 0 20px;
+			}
+
+			.telegram, .facebook, .vk {
+
+				background: url(../resources/img/icons/t_icon.svg) no-repeat;
+
+				width: 40px;
+				height: 40px;
+
+			}
+			.facebook {
+				background: url(../resources/img/icons/fb_icon.svg) no-repeat;
+			}
+			.vk {
+				background: url(../resources/img/icons/vk_icon.svg) no-repeat;
+			}
+
+		}
+
+		.footer__content_copyright {
+
+			font-size: 0.9em;
+
+		}
+
+	}
+
+
+}
