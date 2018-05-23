@@ -106,28 +106,32 @@ main {
 	.main__content {
 
 		font-size: 18px;
-
 		background: rgba(39, 40, 47, 0.9);
 
 		padding: 20px 10px 10px;
 
 		h1, h2 {
+
 			text-align: center;
 
 			font-family: 'Open Sans', sans-serif;
 			font-size: 2rem;
 
 			margin: 30px 0;
+
 		}
+
 		h2 {
 
 			border-radius: 8px;
+
 			box-shadow: 0 -2px rgba(255, 255, 255, 0.7);
 
 			font-size: 1.8rem;
 
 			margin: 20px 0 40px;
 			padding: 30px 5px;
+
 		}
 
 		p {
@@ -136,7 +140,19 @@ main {
 			padding: 0 5px;
 
 			text-align: justify;
+
 		}
+
+		.author {
+
+			margin-bottom: 30px;
+
+			font-style: italic;
+
+			text-align: right;
+
+		}
+
 	}
 
 }
