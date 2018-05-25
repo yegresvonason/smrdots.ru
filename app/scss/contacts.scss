@@ -10,7 +10,7 @@ $link-color: rgba(255, 255, 255, 0.9);
 	padding: 0;
 	box-sizing: border-box;
 
-	color: $link-color;
+	color: #000;
 
 	text-decoration: none;
 }
@@ -42,7 +42,14 @@ ul {
 		margin-top: 10px;
 
 		font-size: 22px;
+
+		color: $link-color;
+
 	}
+}
+
+p, span, h1, h2 {
+	color: $link-color;
 }
 
 .hidden {
