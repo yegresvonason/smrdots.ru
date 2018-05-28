@@ -104,7 +104,10 @@ p, span, h1, h2 {
 
 main {
 
-	background: rgba(51, 51, 51, 0.9);
+	//background: rgba(51, 51, 51, 0.9);
+	background: url(../resources/img/contacts__background.jpg) no-repeat;
+	background-position: left center;
+	background-size: cover;
 
 	position: relative;
 	padding-top: 86px;
@@ -114,7 +117,7 @@ main {
 
 		font-size: 18px;
 
-		background: rgba(39, 40, 47, 0.9);
+		background: rgba(39, 40, 47, 0.8);
 
 		padding: 20px 10px 10px;
 
@@ -149,3 +152,4 @@ main {
 }
 
 @import '_partial/footer';
+@import 'media/_index';
