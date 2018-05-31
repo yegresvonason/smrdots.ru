@@ -139,6 +139,31 @@ main {
 
 			text-align: justify;
 		}
+
+		ul li {
+
+			position: relative;
+
+			padding-left: 15px;
+
+			font-size: 18px;
+
+		}
+
+		li::after {
+
+			width: 15px;
+			height: 1px;
+			position: absolute;
+			left: -5px;
+			top: 13px;
+
+			background: #fff;
+			content: '';
+
+		}
+
+		a { text-decoration: underline;}
 	}
 }
 
