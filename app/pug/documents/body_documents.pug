@@ -1,0 +1,19 @@
+body
+	include ../base/header_base
+	main
+		.main__content
+			h1 Документы
+			p Ниже представлены следующие документы:
+			ul
+				li 
+					b Устав региональной общественной организации 
+				li
+					b Протокол общего собрания учредителей.
+			span (Изображения кликабельны)
+			.main__content_docs
+				a(href='resources/docs/scan1.pdf' target='_blank')
+					img(src='resources/img/docs/doc1.png' alt='Устав')
+				a(href='resources/docs/scan2.pdf' target='_blank')
+					img(src='resources/img/docs/doc2.png' alt='Протокол')
+	include ../base/footer_base
+	include ../base/scripts_base
