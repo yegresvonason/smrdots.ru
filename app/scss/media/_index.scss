@@ -1,7 +1,62 @@
-@media (min-width: 576px) {
-
-	.container {
+@media screen and (min-width: 567px) {
+	.header__content {
 		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.header__content {
+
+		.header__content_menu {
+
+			transition: all 1s ease;
+			
+			button {
+				display: none;
+			}
+
+			ul {
+
+				display: flex;
+				justify-content: space-around;
+
+				margin-bottom: 0;
+
+				li {
+
+					margin-right: 20px;
+
+					text-align: right;
+
+					border-bottom: none !important;
+
+					ul {
+						display: none;
+
+						li {
+							margin: 0;
+							padding: 0 !important;
+
+							text-align: right !important;
+						}
+					}
+				}
+
+				li:hover {
+
+					ul {
+						display: block;
+
+						li {
+							text-align: right !important;
+						}
+					}
+
+				}
+			}
+
+		}
 	}
 
 }
