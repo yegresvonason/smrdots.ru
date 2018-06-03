@@ -1,10 +1,14 @@
 footer {
 
+	position: relative;
+
 	height: 100%;
     
-    background: rgba(43, 38, 75, 0.88);
+   background: rgba(43, 38, 75, 0.88);
 
 	.footer__content {
+
+		position: relative;
 
 		padding: 0 30px;
 		padding-top: 20px;

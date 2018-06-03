@@ -104,8 +104,8 @@ p, span, h1, h2 {
 
 main {
 
-	background: url(../resources/img/contacts__background.jpg) no-repeat;
-	background-position: left center;
+	background: url(../resources/img/docs__background.jpg) no-repeat;
+	background-position: center center;
 	background-size: cover;
 
 	position: relative;
@@ -184,6 +184,8 @@ main {
 
 			display: flex;
 			justify-content: space-between;
+
+			margin: 10px 0 20px;
 
 			a {
 
