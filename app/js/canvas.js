@@ -1,7 +1,9 @@
 var canvas = document.querySelector('canvas');
 
 // set styles to canvas:
-canvas.width = window.innerWidth;
+
+// canvas.width = window.innerWidth;
+canvas.width = $(window).width();
 canvas.height = 118;
 canvas.style.position = 'absolute';
 
@@ -28,7 +30,8 @@ window.addEventListener('mousemove', function(event) {
 
 window.addEventListener('resize', function() {
 
-	canvas.width = window.innerWidth;
+	//canvas.width = window.innerWidth;
+	canvas.width = $(window).width();
 	init();
 });
 
