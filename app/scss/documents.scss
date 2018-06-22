@@ -27,9 +27,7 @@ a:active {
 	text-decoration: none;
 }
 
-body {
-	background: rgba(51, 51, 51, 0.9);
-}
+@import '_partial/body';
 
 button:focus {
 	outline: none;
@@ -98,6 +96,18 @@ p, span, h1, h2 {
   background: #666; 
 }
 
+@keyframes scrollToTop {
+	0% {
+		transform: translateY(200%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 /* <======= Общие стили ========*/
 
 @import '_partial/header';
@@ -130,6 +140,11 @@ main {
 			font-size: 2rem;
 
 			margin: 30px 0;
+		}
+
+		h1 {
+			animation: scrollToTop 2s ease-out 0.3s 1;
+			animation-fill-mode: both;
 		}
 
 		h2 {
