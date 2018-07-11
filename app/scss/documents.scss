@@ -130,9 +130,9 @@ p, span, h1, h2 {
 	}
 }
 
-@keyframes scrollToRight200 {
+@keyframes scrollToRight50 {
 	0% {
-		transform: translateX(-200%);
+		transform: translateX(-50%);
 		opacity: 0;
 	}
 
@@ -142,14 +142,36 @@ p, span, h1, h2 {
 	}
 }
 
-@keyframes scrollToLeft200 {
+@keyframes scrollToLeft50 {
 	0% {
-		transform: translateX(200%);
+		transform: translateX(50%);
 		opacity: 0;
 	}
 
 	100% {
 		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes rotateY90 {
+	0% {
+		transform: rotateY(90deg);
+		opacity: 0;
+	}
+	100% {
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+}
+
+@keyframes rotate360 {
+	0% {
+		transform: rotate(-135deg);
+		opacity: 0;
+	}
+	100% {
+		transform: rotate(0);
 		opacity: 1;
 	}
 }
@@ -160,10 +182,11 @@ p, span, h1, h2 {
 		opacity: 0;
 	}
 	50% {
-		transform: rotate(-135deg);
+		transform: rotate(-245deg);
+		opacity: 0.7;
 	}
 	100% {
-		transform: rotate(-225deg);
+		transform: rotate(-445deg);
 		opacity: 1;
 	}
 }
@@ -173,12 +196,12 @@ p, span, h1, h2 {
 		transform: translate(0);
 	}
 	50% {
-		transform: translate(-50px, 0);
-		border-color: rgba(255, 0, 0, 0.99);
-		// background-color: rgba(255, 0, 0, 0.99);
+		transform: translate(-25px, 0);
+		background-color: rgba(255, 0, 0, 0.99);
+		box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.5);
 	}
 	100% {
-		transform: translate(0);
+		transform: translate(-10px, 0);
 	}
 }
 
@@ -187,12 +210,12 @@ p, span, h1, h2 {
 		transform: translate(0);
 	}
 	50% {
-		transform: translate(50px, 0);
-		border-color: rgba(255, 0, 0, 0.99);
-		// background-color: rgba(255, 0, 0, 0.99);
+		transform: translate(25px, 0);
+		background-color: rgba(255, 0, 0, 0.99);
+		box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.5);
 	}
 	100% {
-		transform: translate(0);
+		transform: translate(10px, 0);
 	}
 }
 
@@ -201,12 +224,12 @@ p, span, h1, h2 {
 		transform: translate(0);
 	}
 	50% {
-		transform: translate(0, -50px);
-		border-color: rgba(0, 0, 255, 0.99);
-		// background-color: rgba(0, 0, 255, 0.99);
+		transform: translate(0, -25px);
+		background-color: rgba(0, 0, 255, 0.99);
+		box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.5);
 	}
 	100% {
-		transform: translate(0);
+		transform: translate(0, -10px);
 	}
 }
 
@@ -215,18 +238,28 @@ p, span, h1, h2 {
 		transform: translate(0);
 	}
 	50% {
-		transform: translate(0, 50px);
-		border-color: rgba(0, 0, 255, 0.99);
-		// background-color: rgba(0, 0, 255, 0.99);
+		transform: translate(0, 25px);
+		background-color: rgba(0, 0, 255, 0.99);
+		box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.5);
 	}
 	100% {
-		transform: translate(0);
+		transform: translate(0, 10px);
 	}
 }
 
 /* <======= Общие стили ========*/
 
 @import '_partial/header';
+
+header object {
+	animation: rotateY90 2s ease-out 4.6s 1;
+	animation-fill-mode: both;
+}
+
+header button.hamburger {
+	animation: rotate360 2s ease-out 4.6s 1;
+	animation-fill-mode: both;
+}
 
 main {
 
@@ -243,38 +276,35 @@ main {
 	overflow: hidden;
 
 	.loader {
-		width: 25px;
-		height: 25px;
+		width: 20px;
+		height: 20px;
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		// border-color: rgba(255, 255, 255, 0.99);
-		// background-color: rgba(255, 255, 255, 0.99);
-		animation: loader 2.3s linear 1.2s 2;
+		animation: loader 2s linear 1.2s 2;
 		opacity: 0;
 	}
 
 	.loader span {
-		width: 35px;
-		height: 35px;
+		width: 20px;
+		height: 20px;
 		position: absolute;
 		left: 0;
 		top: 0;
-		border: 4px solid rgba(255, 255, 255, 0.99);
 		border-radius: 50%;
 	}
 
 	.loader span:nth-child(1) {
-	  animation: span-1 linear 2.3s 1.2s 2;
+	  animation: span-1 linear 2s 1.2s 2;
 	}
 	.loader span:nth-child(2) {
-	  animation: span-2 linear 2.3s 1.2s 2;
+	  animation: span-2 linear 2s 1.2s 2;
 	}
 	.loader span:nth-child(3) {
-	  animation: span-3 linear 2.3s 1.2s 2;
+	  animation: span-3 linear 2s 1.2s 2;
 	}
 	.loader span:nth-child(4) {
-	  animation: span-4 linear 2.3s 1.2s 2;
+	  animation: span-4 linear 2s 1.2s 2;
 	}
 
 	.main__content {
@@ -346,12 +376,12 @@ main {
 		}
 
 		ul li:first-child {
-			animation: scrollToRight200 2s ease-out 5.0s 1;
+			animation: scrollToRight50 2s ease-out 5.0s 1;
 			animation-fill-mode: both;
 		}
 
 		ul li:last-child {
-			animation: scrollToLeft200 2s ease-out 5.0s 1;
+			animation: scrollToLeft50 2s ease-out 5.0s 1;
 			animation-fill-mode: both;
 		}
 
@@ -382,6 +412,8 @@ main {
 				flex-direction: column;
 
 				img {
+
+					border-radius: 4px;
 
 					margin: auto;
 
