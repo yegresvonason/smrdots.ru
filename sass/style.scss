@@ -1,0 +1,198 @@
+$black: #000;
+$white: #fff;
+$e5: #e5e5e5;
+
+%flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src:	url('../assets/fonts/MuseoSansCyrl_100.woff') format('woff'),
+  			url('../assets/fonts/MuseoSansCyrl_100.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src:	url('../assets/fonts/MuseoSansCyrl_300.woff') format('woff'),
+  			url('../assets/fonts/MuseoSansCyrl_300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src:	url('../assets/fonts/MuseoSansCyrl_500.woff') format('woff'),
+  			url('../assets/fonts/MuseoSansCyrl_500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src:	url('../assets/fonts/MuseoSansCyrl_700.woff') format('woff'),
+  			url('../assets/fonts/MuseoSansCyrl_700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.screens-container {
+	width: 100%;
+	height: 100%;
+
+	&-wrapper {
+		@extend %flex-row;
+
+		background: url(../assets/images/1.jpg) no-repeat 0 0 / cover;
+
+		position: relative;
+
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.screen-close-button {
+	border: 2px solid $white;
+	border-radius: 50%;
+	cursor: pointer;
+
+	position: absolute;
+	top: 10px;
+
+	transition: all .6s ease-in-out;
+
+	width: 40px;
+	height: 40px;
+
+	&:before {
+		background: $white;
+		content: '';
+		display: block;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -10px;
+		margin-left: -1px;
+
+		transform: rotate(45deg);
+		transition: all .6s ease-in-out;
+
+		width: 2px;
+		height: 20px;
+	}
+
+	&:after {
+		background: $white;
+		content: '';
+		display: block;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -10px;
+		margin-left: -1px;
+
+		transform: rotate(-45deg);
+		transition: all .6s ease-in-out;
+
+		width: 2px;
+		height: 20px;
+	}
+
+	&:hover {
+		background: $white;
+
+		&:before, &:after {
+			background: $black;
+		}
+	}
+}
+
+.screen {
+	border-right: 1px solid $e5;
+
+	transition: background .6s ease-in-out, width .6s ease-in-out;
+	will-change: width;
+
+	width: 100%;
+	height: 100%;
+
+	&:last-child {
+		border-right: none;
+	}
+
+	&:hover {
+		background: rgba(0, 0, 0, .5);
+		cursor: pointer;
+	}
+
+	&-opened {
+		width: 100%;
+	}
+
+	&-hidden {
+		width: 70px;
+	}
+}
+
+.layer {
+
+}
+
+.layer-front {
+	@extend %flex-row;
+	align-items: center;
+	justify-content: center;
+	color: $white;
+	opacity: 1;
+	transition: margin-top .6s ease-in-out;
+
+	width: 100%;
+	height: 100%;
+
+	&:hover {
+		margin-top: -40px;
+	}
+
+	h2 {
+		color: $white;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+	}
+
+}
+
+.layer-back {
+	display: none;
+	opacity: 0;
+
+}
+
+.screen1 {
+	// flex-basis: 50%;
+	// flex-grow: 0;
+	// flex-shrink: 0;
+}
