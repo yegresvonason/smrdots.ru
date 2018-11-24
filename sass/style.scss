@@ -178,6 +178,13 @@ body {
 		.layer-back {
 			opacity: 1;
 			z-index: 1;
+
+			transition: all .6s ease-in-out;
+
+			animation-name: opacityInc;
+			animation-fill-mode: both;
+			animation-duration: 1.2s;
+			animation-delay: 1.2s;
 		}
 	}
 
@@ -220,7 +227,7 @@ body {
 	left: 0;
 	z-index: 1;
 
-	transition: all .6s ease-in-out;
+	transition: background .6s ease-in-out, margin-top .6s ease-in-out, width .6s ease-in-out;
 
 	width: 100%;
 	height: 100%;
@@ -241,7 +248,7 @@ body {
 		transform: rotate(0);
 		transform-origin: top left;
 
-		transition: opacity .6s ease-in-out;
+		// transition: opacity .6s ease-in-out;
 	}
 }
 
@@ -257,7 +264,7 @@ body {
 	left: 0;
 	z-index: -1;
 
-	transition: all .6s ease-in-out;
+	// transition: all .6s ease-in-out;
 
 	width: 100%;
 	height: 100%;

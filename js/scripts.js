@@ -112,8 +112,6 @@ $(function() {
 			}
 
 
-
-			console.log($(this).index('.layer-front'));
 		});
 
 	/*
