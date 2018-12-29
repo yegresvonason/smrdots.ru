@@ -9,6 +9,11 @@ $(function() {
 			switch($(this).index('.layer-front')) {
 				case 0:
 					// Первая итерация:
+						// Прячем кнопку закрытия:
+							$('.screen-close-button').css({
+								'opacity': '0',
+								'z-index': '-1'
+							});
 						// Уменьшаем экраны, кроме первого:
 							$('.screen2').removeClass('screen-opened').addClass('screen-hidden');
 							$('.screen3').removeClass('screen-opened').addClass('screen-hidden');
@@ -31,6 +36,11 @@ $(function() {
 					break;
 				case 1:
 					// Первая итерация:
+						// Прячем кнопку закрытия:
+							$('.screen-close-button').css({
+								'opacity': '0',
+								'z-index': '-1'
+							});
 						// Уменьшаем экраны, кроме второго:
 							$('.screen1').removeClass('screen-opened').addClass('screen-hidden');
 							$('.screen3').removeClass('screen-opened').addClass('screen-hidden');
@@ -51,6 +61,11 @@ $(function() {
 					break;
 				case 2:
 					// Первая итерация:
+						// Прячем кнопку закрытия:
+							$('.screen-close-button').css({
+								'opacity': '0',
+								'z-index': '-1'
+							});
 						// Уменьшаем экраны, кроме третьего:
 							$('.screen1').removeClass('screen-opened').addClass('screen-hidden');
 							$('.screen2').removeClass('screen-opened').addClass('screen-hidden');
@@ -71,6 +86,11 @@ $(function() {
 					break;
 				case 3:
 					// Первая итерация:
+						// Прячем кнопку закрытия:
+							$('.screen-close-button').css({
+								'opacity': '0',
+								'z-index': '-1'
+							});
 						// Уменьшаем экраны, кроме четвертого:
 							$('.screen1').removeClass('screen-opened').addClass('screen-hidden');
 							$('.screen2').removeClass('screen-opened').addClass('screen-hidden');
@@ -91,6 +111,11 @@ $(function() {
 					break;
 				case 4:
 					// Первая итерация:
+						// Прячем кнопку закрытия:
+							$('.screen-close-button').css({
+								'opacity': '0',
+								'z-index': '-1'
+							});
 						// Уменьшаем экраны, кроме пятого:
 							$('.screen1').removeClass('screen-opened').addClass('screen-hidden');
 							$('.screen2').removeClass('screen-opened').addClass('screen-hidden');
