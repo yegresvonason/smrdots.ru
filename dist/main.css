@@ -1,22 +1,22 @@
 @font-face {
   font-family: "MuseoSansCyrl100";
-  src: url("assets/fonts/MuseoSansCyrl_100.eot?") format("eot"), url("assets/fonts/MuseoSansCyrl_100.woff2") format("woff2"), url("assets/fonts/MuseoSansCyrl_100.woff") format("woff"), url("assets/fonts/MuseoSansCyrl_100.ttf") format("truetype"), url("assets/fonts/MuseoSansCyrl_100.svg") format("svg"); }
+  src: url("../../../assets/fonts/MuseoSansCyrl_100.eot?") format("eot"), url("../../../assets/fonts/MuseoSansCyrl_100.woff2") format("woff2"), url("../../../assets/fonts/MuseoSansCyrl_100.woff") format("woff"), url("../../../assets/fonts/MuseoSansCyrl_100.ttf") format("truetype"), url("../../../assets/fonts/MuseoSansCyrl_100.svg") format("svg"); }
 
 @font-face {
   font-family: "MuseoSansCyrl300";
-  src: url("assets/fonts/MuseoSansCyrl_300.eot?") format("eot"), url("assets/fonts/MuseoSansCyrl_300.woff2") format("woff2"), url("assets/fonts/MuseoSansCyrl_300.woff") format("woff"), url("assets/fonts/MuseoSansCyrl_300.ttf") format("truetype"), url("assets/fonts/MuseoSansCyrl_300.svg") format("svg"); }
+  src: url("../../../assets/fonts/MuseoSansCyrl_300.eot?") format("eot"), url("../../../assets/fonts/MuseoSansCyrl_300.woff2") format("woff2"), url("../../../assets/fonts/MuseoSansCyrl_300.woff") format("woff"), url("../../../assets/fonts/MuseoSansCyrl_300.ttf") format("truetype"), url("../../../assets/fonts/MuseoSansCyrl_300.svg") format("svg"); }
 
 @font-face {
   font-family: "MuseoSansCyrl500";
-  src: url("assets/fonts/MuseoSansCyrl_500.eot?") format("eot"), url("assets/fonts/MuseoSansCyrl_500.woff2") format("woff2"), url("assets/fonts/MuseoSansCyrl_500.woff") format("woff"), url("assets/fonts/MuseoSansCyrl_500.ttf") format("truetype"), url("assets/fonts/MuseoSansCyrl_500.svg") format("svg"); }
+  src: url("../../../assets/fonts/MuseoSansCyrl_500.eot?") format("eot"), url("../../../assets/fonts/MuseoSansCyrl_500.woff2") format("woff2"), url("../../../assets/fonts/MuseoSansCyrl_500.woff") format("woff"), url("../../../assets/fonts/MuseoSansCyrl_500.ttf") format("truetype"), url("../../../assets/fonts/MuseoSansCyrl_500.svg") format("svg"); }
 
 @font-face {
   font-family: "MuseoSansCyrl700";
-  src: url("assets/fonts/MuseoSansCyrl_700.eot?") format("eot"), url("assets/fonts/MuseoSansCyrl_700.woff2") format("woff2"), url("assets/fonts/MuseoSansCyrl_700.woff") format("woff"), url("assets/fonts/MuseoSansCyrl_700.ttf") format("truetype"), url("assets/fonts/MuseoSansCyrl_700.svg") format("svg"); }
+  src: url("../../../assets/fonts/MuseoSansCyrl_700.eot?") format("eot"), url("../../../assets/fonts/MuseoSansCyrl_700.woff2") format("woff2"), url("../../../assets/fonts/MuseoSansCyrl_700.woff") format("woff"), url("../../../assets/fonts/MuseoSansCyrl_700.ttf") format("truetype"), url("../../../assets/fonts/MuseoSansCyrl_700.svg") format("svg"); }
 
 @font-face {
   font-family: "MuseoSansCyrl900";
-  src: url("assets/fonts/MuseoSansCyrl_900.eot?") format("eot"), url("assets/fonts/MuseoSansCyrl_900.woff2") format("woff2"), url("assets/fonts/MuseoSansCyrl_900.woff") format("woff"), url("assets/fonts/MuseoSansCyrl_900.ttf") format("truetype"), url("assets/fonts/MuseoSansCyrl_900.svg") format("svg"); }
+  src: url("../../../assets/fonts/MuseoSansCyrl_900.eot") format("eot"), url("../../../assets/fonts/MuseoSansCyrl_900.woff2") format("woff2"), url("../../../assets/fonts/MuseoSansCyrl_900.woff") format("woff"), url("../../../assets/fonts/MuseoSansCyrl_900.ttf") format("truetype"), url("../../../assets/fonts/MuseoSansCyrl_900.svg") format("svg"); }
 
 * {
   box-sizing: border-box;
