@@ -6,6 +6,7 @@ function initSmoothScroll() {
         body = document.body,
         scroller = {
             target: document.querySelector('.wrapper-scroll'),
+            target1: document.querySelector('header'),
             ease: .05,
             endY: 0,
             y: 0,
@@ -45,6 +46,10 @@ function initSmoothScroll() {
 
         TweenLite.set(scroller.target, {
             y: -scroller.y
+        });
+
+        TweenLite.set(scroller.target1, {
+            y: scroller.y
         });
 
         requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;

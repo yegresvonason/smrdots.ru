@@ -1,5 +1,7 @@
-@import "./components/_fonts.scss";
-@import "./components/_smooth.scss";
+@import "./components/_fonts";
+@import "./components/_smooth";
+@import "./components/header";
+@import "./components/main";
 
 $Museo100: "MuseoSansCyrl100", sans-serif;
 $Museo300: "MuseoSansCyrl300", sans-serif;
