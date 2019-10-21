@@ -1,23 +1,30 @@
 {
   "name": "smrdots.ru",
   "version": "1.0.0",
-  "description": "LP for smrdots.ru",
-  "main": "index.html",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "node-sass": "^4.12.0",
+    "watchify": "^3.11.1"
+  },
   "scripts": {
-    "build-css": "node-sass --include-path scss ./src/scss/main.scss ./dist/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "bundle-js": "watchify src/js/index.js -o dist/bundle.js --debug",
-    "minify-js": "browserify -g uglifyify ./dist/bundle.js > ./dist/bundle.min.js",
-    "browser-sync": "browser-sync start --server --files='./*.html,./dist/*.css,./dist/*.js'",
-    "dev": "npm run bundle-js & npm run build-css & npm run watch-css & npm run browser-sync",
-    "build": "npm run minify-js & npm run build-css"
+    "build-css": "node-sass --watch src/scss -o dist",
+    "build-js": "watchify src/js/index.js -o dist/bundle.js --debug",
+    "browser-sync": "browser-sync start --server --files='./*html,./dist/*'",
+    "dev": "npm run build-css & npm run build-js & npm run browser-sync"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yegresvonason/smrdots.ru.git"
   },
   "keywords": [],
-  "author": "yegresvonason",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yegresvonason/smrdots.ru/issues"
@@ -34,26 +41,5 @@
         }
       ]
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babelify": "^10.0.0",
-    "browser-sync": "^2.26.7",
-    "dom-css": "^2.1.0",
-    "node-sass": "^4.12.0",
-    "nodemon": "^1.19.1",
-    "uglifyify": "^5.0.1",
-    "watchify": "^3.11.1"
-  },
-  "dependencies": {
-    "browserify": "^16.5.0",
-    "dom-classes": "^1.0.0",
-    "dom-create-element": "^1.0.2",
-    "dom-events": "^0.1.1",
-    "intersection-observer": "^0.7.0",
-    "prefix": "^1.0.0",
-    "smooth-scrolling": "^2.3.12",
-    "virtual-scroll": "^1.5.1"
   }
 }

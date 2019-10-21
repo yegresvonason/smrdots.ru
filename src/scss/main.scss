@@ -1,24 +1,9 @@
-@import "./components/_fonts";
-@import "./components/_smooth";
+@import "./components/flex";
+@import "./components/fonts";
 @import "./components/header";
 @import "./components/main";
 
-$Museo100: "MuseoSansCyrl100", sans-serif;
-$Museo300: "MuseoSansCyrl300", sans-serif;
-$Museo500: "MuseoSansCyrl500", sans-serif;
-$Museo700: "MuseoSansCyrl700", sans-serif;
-$Museo900: "MuseoSansCyrl900", sans-serif;
-
 * {
     box-sizing: border-box;
-    outline: none;
-}
-
-body {
-    background: #333;
-    color: #f4f4f4;
-}
-
-h1 {
-    font: 36px $Museo900;
+    font-family: "MuseoSansCyrl300";
 }
