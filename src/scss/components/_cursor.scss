@@ -1,0 +1,34 @@
+@import "./_flex";
+
+#cursor {
+    border: 1px solid #000;
+    border-radius: 50%;
+
+    @include flex-center;
+
+    position: fixed;
+    top: -2rem;
+    left: -2rem;
+    z-index: 3;
+
+    // transform: translateX(-50%) translateY(-50%);
+    // transition: top .05s ease, left .05s ease;
+
+    width: 4rem;
+    height: 4rem;
+
+    &-inner {
+        background: #000;
+        border-radius: 50%;
+
+        position: fixed;
+        top: -.6rem;
+        left: -.6rem;
+        z-index: 4;
+
+        // transform: translateX(-50%) translateY(-50%);
+
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
